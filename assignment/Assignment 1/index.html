@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Manda - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+    </script>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section with 3D Animation -->
+    <section id="home">
+      <div class="home-content">
+        <h1>Hi, I'm Muhammad Manda</h1>
+        <p>A Web Developer, Data Analyst, and Machine Learning Engineer</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn" style="margin-left: 1rem"
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm a Computer Programming student passionate about web development
+          and problem-solving. With a focus on JavaScript and React, I love
+          building interactive web applications and tackling challenging
+          projects. When I'm not coding, you'll find me exploring new
+          technologies, contributing to the developer community, and turning
+          innovative ideas into reality.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="resume-button-container">
+      <a href="assets/MuhammadMandaResume.pdf" class="btn" download
+        >Download Resume</a
+      >
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="assets/img/IMG_7495.jpg" alt="Portfolio Website" />
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>
+              A modern portfolio website with 3D animations built using Three.js
+              and modern web technologies.
+            </p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Three.js</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/img/IMG_7495.jpg" alt="E-Commerce Platform" />
+          <div class="project-content">
+            <h3>E-Commerce Platform</h3>
+            <p>
+              A full-stack e-commerce platform with React, Node.js, and Stripe
+              integration for payments.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Stripe</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/img/IMG_7495.jpg" alt="AI Weather Dashboard" />
+          <div class="project-content">
+            <h3>AI Weather Dashboard</h3>
+            <p>
+              An intelligent weather dashboard using machine learning for
+              accurate weather predictions.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>React</span>
+              <span>API</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>Have a project in mind or want to collaborate? Let's talk!</p>
+      <form id="contact-form" class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/muhammad-manda/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:muhammadmanda16@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
