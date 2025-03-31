@@ -18,3 +18,5 @@ console.log(random_holiday)
 
 console.log(lodash.findIndex(holidays, { name: "christmas" }));
 console.log(lodash.findIndex(holidays, { name: "Canada Day" }));
+
+
